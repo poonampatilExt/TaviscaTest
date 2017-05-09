@@ -37,9 +37,7 @@ namespace Travel.Connectors.Hotel
 
         public IServiceProvider ConfigureIoC(IServiceCollection services)
         {
-            var container = new Container(c =>
-            {
-            });
+            var container = new Container();
             container.Configure(config =>
                         {
                             //Populate the container using the service collection
